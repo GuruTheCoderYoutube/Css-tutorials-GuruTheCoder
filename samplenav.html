@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome navbar with a dropdown</title>
+    <style>
+            ul {
+                background-color: #333;
+                overflow: hidden;
+                padding:0;
+                margin:0;
+                /* Yes, you can set the list style type in the ul */
+                list-style-type:none;
+            }
+            li 
+            {
+                float: left;
+            }
+            li a, .dropbtn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover, .dropdown:hover, dropbtn {
+                 background-color: red;
+            }
+            li.dropdown {
+                 display: inline-block;
+            }
+            .dropdown-content 
+            {
+                /* Wait for it */
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width:160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+
+            }
+
+            .dropdown-content a:hover 
+            {
+                background-color: #f1f1f1;
+            }
+            .dropdown:hover .dropdown-content {
+                 display:block;
+            }
+            
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="#home"></a>Home</li>
+        <li><a href="#news"></a>News</li>
+        <!-- Now the dropdown -->
+        <a href="javascript:void(0)" class='dropbtn'>Dropdown</a>
+        <div class="dropdown-content">
+            <a href="#">Something</a>
+            <a href="#">Something else here</a>
+            <a href="#">Yea, another one!</a>
+        </div>
+    </ul>
+    <h3>This is my cool website</h3>
+    <p>This is an awesome navbar</p>
+<!-- Now we have to style it as well -->
+<!-- It doesn't look quite good now, SURELY NOT -->
+</body>
+</html>
